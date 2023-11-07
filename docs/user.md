@@ -690,7 +690,9 @@ configured [default requests](reference/operator_parameters.md#kubernetes-resour
 
 ### HugePages support
 
-The operator supports [HugePages](https://www.postgresql.org/docs/15/kernel-resources.html#LINUX-HUGEPAGES).
+The operator supports [HugePages](https://www.postgresql.org/docs/15/kernel-resources.html#LINUX-HUGEPAGES)
+on Kubernetes 1.19 and 1.18 with the `HugePageStorageMediumSize` Feature Gate enabled.
+
 To enable HugePages, set the matching resource requests and/or limits in the manifest:
 
 ```yaml
